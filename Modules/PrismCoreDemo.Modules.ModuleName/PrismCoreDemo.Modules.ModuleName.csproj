@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>PrismCoreDemo.Modules.ModuleName</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ViewModels\ViewAViewModel.cs~RF1df3cef.TMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PrismCoreDemo.Core\PrismCoreDemo.Core.csproj" />
+    <ProjectReference Include="..\..\Services\PrismCoreDemo.Services.Interfaces\PrismCoreDemo.Services.Interfaces.csproj" />
+  </ItemGroup>
+</Project>
